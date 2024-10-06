@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<main [ngClass]="{'night-mode': isNightMode}">
+    <h1>{{ language === 'es' ? 'Nuestros Productos' : 'Our Products' }}</h1>
+    <div class="controls">
+        <button (click)="toggleNightMode()">{{ getTranslation('changeMode') }}</button>
+        <button (click)="toggleViewMode()">{{ getTranslation('changeView') }}</button>
+        <button (click)="toggleLanguage()">{{ getTranslation('changeLanguage') }}</button>
+        <select [(ngModel)]="filterCategory">
+            <option value="">{{ getTranslation('allCategories') }}</option>
+            <option value="Calzado">{{ language === 'es' ? 'Calzado' : 'Footwear' }}</option>
+            <option value="Ropa">{{ language === 'es' ? 'Ropa' : 'Clothing' }}</option>
+            <option value="Equipamiento">{{ language === 'es' ? 'Equipamiento' : 'Equipment' }}</option>
+            <option value="Accesorios">{{ language === 'es' ? 'Accesorios' : 'Accessories' }}</option>
+        </select>
+    </div>
+    <div [ngClass]="{'grid-view': viewMode === 'grid', 'table-view': viewMode === 'table'}">
+        <div *ngFor="let product of filterProducts()" class="product-item">
+            <h3>{{ product.nombre }}</h3>
+            <img [src]="getProductImageUrl(product.id)" (error)="handleImageError($event)" width="100" height="100">
+            <p>{{ getTranslation('price') }}: {{ product.precio | currency:'USD':'symbol':'1.2-2' }}</p>
+            <p>{{ getTranslation('category') }}: {{ product.categoria }}</p>
+            <button (click)="loadProductDetails(product.id.toString())">{{ getTranslation('viewDetails') }}</button>
+        </div>
+    </div>
+    <div *ngIf="selectedProduct" class="product-details">
+        <h2>{{ selectedProduct.nombre }}</h2>
+        <p>{{ getTranslation('category') }}: {{ selectedProduct.categoria }}</p>
+        <p>{{ getTranslation('brand') }}: {{ selectedProduct.marca }}</p>
+        <p>{{ getTranslation('price') }}: {{ selectedProduct.precio | currency:'USD':'symbol':'1.2-2' }}</p>
+        <p>{{ getTranslation('availability') }}: {{ selectedProduct.disponibilidad ? getTranslation('inStock') :
+            getTranslation('outOfStock') }}</p>
+        <button (click)="closeProductDetails()">{{ getTranslation('close') }}</button>
+    </div>
+</main>
+<app-footer></app-footer>

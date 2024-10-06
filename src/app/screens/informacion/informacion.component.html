@@ -1,0 +1,69 @@
+<app-navbar></app-navbar>
+
+<main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8" style="color: aqua;">Contacto e Información</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4" style="color: red;text-align: center;">Formulario de contacto</h2>
+            <form style="text-align: center;">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Nombre:</label>
+                    <input type="text" id="name" name="name" required class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Mensaje:</label>
+                    <textarea id="message" name="message" required class="w-full px-3 py-2 border rounded-lg"
+                        rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Ubicación</h2>
+            <p class="mb-4">Dirección: Calle Ejemplo 123, Ciudad, País</p>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9615578906983!2d-73.98823492404765!3d40.74844097138388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1696575354771!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Nuestros productos en acción</h2>
+        <div class="aspect-w-16 aspect-h-9" style="align-items: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HjMysGy3nl8?si=MhUQeHKqsnVaBGVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Testimonios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <blockquote class="italic border-l-4 border-blue-500 pl-4">
+                "Los productos de esta tienda de deportes son de excelente calidad. He mejorado mi rendimiento desde que
+                los uso." - María G.
+            </blockquote>
+            <blockquote class="italic border-l-4 border-blue-500 pl-4">
+                "El servicio al cliente es inmejorable. Siempre encuentro lo que necesito y recibo asesoramiento
+                experto." - Carlos R.
+            </blockquote>
+            <blockquote class="italic border-l-4 border-blue-500 pl-4">
+                "Gracias a su amplia selección de equipos, pude encontrar todo lo necesario para mi nuevo gimnasio en
+                casa." - Laura M.
+            </blockquote>
+            <blockquote class="italic border-l-4 border-blue-500 pl-4">
+                "Los precios son muy competitivos y la calidad es excelente. Definitivamente mi tienda de deportes
+                favorita." - Juan D.
+            </blockquote>
+        </div>
+    </section>
+</main>
+
+<app-footer></app-footer>

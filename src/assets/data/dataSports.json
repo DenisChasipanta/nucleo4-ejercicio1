@@ -1,0 +1,95 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Zapatillas de Running",
+      "categoria": "Calzado",
+      "precio": 89.99,
+      "disponibilidad": true,
+      "marca": "Nike",
+      "imagenes": "assets/images/1.jpg"      
+      
+    },
+    {
+      "id": 2,
+      "nombre": "Camiseta de Entrenamiento",
+      "categoria": "Ropa",
+      "precio": 25.99,
+      "disponibilidad": true,
+      "marca": "Adidas",
+      "imagenes": "assets/images/2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Balón de Fútbol",
+      "categoria": "Equipamiento",
+      "precio": 29.99,
+      "disponibilidad": true,
+      "marca": "Puma",
+      "imagenes": "assets/images/3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Guantes de Ciclismo",
+      "categoria": "Accesorios",
+      "precio": 15.99,
+      "disponibilidad": true,
+      "marca": "Specialized",
+      "imagenes": "assets/images/4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Raqueta de Tenis",
+      "categoria": "Equipamiento",
+      "precio": 199.99,
+      "disponibilidad": false,
+      "marca": "Wilson",
+      "imagenes": "assets/images/5.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Botella de Agua Deportiva",
+      "categoria": "Accesorios",
+      "precio": 12.99,
+      "disponibilidad": true,
+      "marca": "CamelBak",
+      "imagenes": "assets/images/6.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Mochila Deportiva",
+      "categoria": "Accesorios",
+      "precio": 45.99,
+      "disponibilidad": true,
+      "marca": "Under Armour",
+      "imagenes": "assets/images/7.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Pantalones Cortos de Entrenamiento",
+      "categoria": "Ropa",
+      "precio": 19.99,
+      "disponibilidad": true,
+      "marca": "Reebok",
+      "imagenes": "assets/images/8.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Pesas Ajustables",
+      "categoria": "Equipamiento",
+      "precio": 149.99,
+      "disponibilidad": false,
+      "marca": "Bowflex",
+      "imagenes": "assets/images/9.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Cinta para Correr",
+      "categoria": "Equipamiento",
+      "precio": 499.99,
+      "disponibilidad": true,
+      "marca": "NordicTrack",
+      "imagenes": "assets/images/10.jpg"
+    }
+  ]
+}
